@@ -1,0 +1,57 @@
+{
+  "packageDirectories": [
+    {
+      "path": "src",
+      "default": true,
+      "package": "ComplianceQuest",
+      "versionName": "CQ Summer 2023",
+      "versionNumber": "13.0"
+    },
+    {
+      "path": "extensions/cq-form/force-app",
+      "package": "ComplianceQuest User Interface",
+      "versionName": "CQ Summer 2023",
+      "versionNumber": "13.0.0.NEXT",
+      "default": false,
+      "dependencies": [
+        {
+          "package": "ComplianceQuest V13.0.0 Beta 3"
+        }
+      ],
+      "definitionFile": "config/project-scratch-def.json",
+      "ancestorId": "ComplianceQuest User Interface V12.1.0"
+    },
+    {
+      "path": "extensions/cq-form/dependent",
+      "default": false
+    },
+    {
+      "path": "extensions/cq-form/unlocked",
+      "package": "CQ Config UI Extension",
+      "versionName": "CQ Summer 2023",
+      "versionNumber": "13.0.0.NEXT",
+      "default": false,
+      "dependencies": [
+        {
+          "package": "ComplianceQuest V13.0.0 Beta 3"
+        },
+        {
+          "package": "ComplianceQuest User Interface V12.1.0"
+        }
+      ],
+      "definitionFile": "config/project-scratch-def.json"
+      "ancestorId": "CQ Config UI Extension"
+    }
+  ],
+  "namespace": "compliancequest",
+  "sfdcLoginUrl": "https://login.salesforce.com",
+  "sourceApiVersion": "56.0",
+  "packageAliases": {
+    "ComplianceQuest": "033o0000000H8q7",
+    "ComplianceQuest User Interface": "0Ho0z0000008OKLCA2",
+    "CQ Config UI Extension": "0Ho0z0000008OJ3CAM",
+    "ComplianceQuest V13.0.0 Beta 3": "04t5c0000010JdVAAU",
+    "ComplianceQuest User Interface V12.1.0": "04t4z000000tCfWAAU",
+    "ComplianceQuest User Interface V12.0.0": "04t4z000000cSeqAAE"
+  }
+}
